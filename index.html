@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta
       name="description"
-      content="Sopro Lúdico"
+      content="Conheça My Dress-Up Dungeon, o novo jogo em desenvolvimento pela Sopro Lúdico. Acompanhe o projeto na Steam e no itch.io."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Sopro Lúdico" />
+    <meta name="application-name" content="Sopro Lúdico" />
     <meta name="theme-color" content="#fff8ef" />
-    <title>Sopro Lúdico</title>
+    <title>Sopro Lúdico | My Dress-Up Dungeon</title>
+    <link rel="canonical" href="/" />
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sopro Lúdico" />
+    <meta property="og:title" content="Sopro Lúdico | My Dress-Up Dungeon" />
+    <meta
+      property="og:description"
+      content="Conheça My Dress-Up Dungeon, o novo jogo em desenvolvimento pela Sopro Lúdico."
+    />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="assets/game-cover.png" />
+    <meta property="og:image:alt" content="Arte de My Dress-Up Dungeon" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sopro Lúdico | My Dress-Up Dungeon" />
+    <meta
+      name="twitter:description"
+      content="Conheça My Dress-Up Dungeon, o novo jogo em desenvolvimento pela Sopro Lúdico."
+    />
+    <meta name="twitter:image" content="assets/game-cover.png" />
+    <meta name="twitter:image:alt" content="Arte de My Dress-Up Dungeon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +43,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "/#organization",
+            "name": "Sopro Lúdico",
+            "url": "/",
+            "logo": "assets/logo.svg",
+            "description": "Estúdio independente de desenvolvimento de jogos."
+          },
+          {
+            "@type": "VideoGame",
+            "@id": "/#my-dress-up-dungeon",
+            "name": "My Dress-Up Dungeon",
+            "description": "Jogo em desenvolvimento pela Sopro Lúdico.",
+            "image": "assets/game-cover.png",
+            "inLanguage": ["pt-BR", "en"],
+            "author": { "@id": "/#organization" },
+            "publisher": { "@id": "/#organization" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "/#website",
+            "url": "/",
+            "name": "Sopro Lúdico",
+            "publisher": { "@id": "/#organization" },
+            "inLanguage": ["pt-BR", "en"]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <main class="page-shell">
@@ -59,8 +118,8 @@
               </a>
             </div>
           </div>
-          <div class="game-art" aria-hidden="true">
-            <img src="assets/game-cover.png" alt="" />
+          <div class="game-art">
+            <img src="assets/game-cover.png" alt="Arte de My Dress-Up Dungeon" data-i18n-alt="gameArtAlt" />
           </div>
         </article>
 
@@ -133,6 +192,9 @@
     <script>
       const translations = {
         pt: {
+          pageTitle: "Sopro Lúdico | My Dress-Up Dungeon",
+          seoDescription: "Conheça My Dress-Up Dungeon, o novo jogo em desenvolvimento pela Sopro Lúdico. Acompanhe o projeto na Steam e no itch.io.",
+          socialDescription: "Conheça My Dress-Up Dungeon, o novo jogo em desenvolvimento pela Sopro Lúdico.",
           development: "Em desenvolvimento",
           gameDescription: "Acompanhe o desenvolvimento e adicione nosso novo jogo à sua lista de desejos.",
           languageSelector: "Selecionar idioma",
@@ -140,6 +202,7 @@
           socialNetworks: "Redes sociais",
           gameOnSteam: "Ver o jogo na Steam",
           gameOnItch: "Ver o jogo no itch.io",
+          gameArtAlt: "Arte de My Dress-Up Dungeon",
           instagramLabel: "Instagram do Sopro Lúdico",
           twitterLabel: "X ou Twitter do Sopro Lúdico",
           blueskyLabel: "Bluesky do Sopro Lúdico",
@@ -147,6 +210,9 @@
           steamLabel: "Página do Sopro Lúdico na Steam"
         },
         en: {
+          pageTitle: "Sopro Lúdico | My Dress-Up Dungeon",
+          seoDescription: "Discover My Dress-Up Dungeon, the new game in development by Sopro Lúdico. Follow the project on Steam and itch.io.",
+          socialDescription: "Discover My Dress-Up Dungeon, the new game in development by Sopro Lúdico.",
           development: "In development",
           gameDescription: "Follow the development and add our new game to your wishlist.",
           languageSelector: "Select language",
@@ -154,6 +220,7 @@
           socialNetworks: "Social media",
           gameOnSteam: "View the game on Steam",
           gameOnItch: "View the game on itch.io",
+          gameArtAlt: "My Dress-Up Dungeon artwork",
           instagramLabel: "Sopro Lúdico on Instagram",
           twitterLabel: "Sopro Lúdico on X or Twitter",
           blueskyLabel: "Sopro Lúdico on Bluesky",
@@ -169,15 +236,22 @@
         const messages = translations[selectedLanguage];
 
         document.documentElement.lang = selectedLanguage === "pt" ? "pt-BR" : "en";
-        document.querySelector('meta[name="description"]').content = selectedLanguage === "pt"
-          ? "Sopro Lúdico — estúdio independente de desenvolvimento de jogos."
-          : "Sopro Lúdico — independent game development studio.";
+        document.title = messages.pageTitle;
+        document.querySelector('meta[name="description"]').content = messages.seoDescription;
+        document.querySelector('meta[property="og:title"]').content = messages.pageTitle;
+        document.querySelector('meta[property="og:description"]').content = messages.socialDescription;
+        document.querySelector('meta[property="og:locale"]').content = selectedLanguage === "pt" ? "pt_BR" : "en_US";
+        document.querySelector('meta[name="twitter:title"]').content = messages.pageTitle;
+        document.querySelector('meta[name="twitter:description"]').content = messages.socialDescription;
 
         document.querySelectorAll("[data-i18n]").forEach((element) => {
           element.textContent = messages[element.dataset.i18n];
         });
         document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
           element.setAttribute("aria-label", messages[element.dataset.i18nAria]);
+        });
+        document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+          element.setAttribute("alt", messages[element.dataset.i18nAlt]);
         });
         languageButtons.forEach((button) => {
           const isActive = button.dataset.language === selectedLanguage;

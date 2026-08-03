@@ -17,3 +17,9 @@ As imagens podem ser SVG, PNG ou WebP; se o nome ou extensão mudar, atualize o 
 2. Em **Settings → Pages**, selecione **Deploy from a branch**.
 3. Escolha a branch `main` e a pasta `/ (root)`.
 4. Para usar um domínio próprio, informe-o em **Custom domain**. O GitHub criará um arquivo `CNAME` automaticamente.
+
+## SEO e domínio
+
+A página já inclui metadados para buscadores, Open Graph, Twitter Cards, dados estruturados e `robots.txt`.
+
+Quando o domínio definitivo estiver configurado, substitua os caminhos relativos `/` nos campos `canonical`, `og:url` e nos dados estruturados de `index.html` pela URL absoluta do site. Crie também um `sitemap.xml` com essa mesma URL e adicione `Sitemap: https://seu-dominio.com/sitemap.xml` ao final de `robots.txt`.
