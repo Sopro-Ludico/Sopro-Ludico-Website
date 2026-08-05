@@ -11,7 +11,7 @@
   <meta name="application-name" content="Sopro Lúdico" />
   <meta name="theme-color" content="#fff8ef" />
   <title>Sopro Lúdico | My Dress-Up Dungeon</title>
-  <link rel="canonical" href="/" />
+  <link rel="canonical" href="https://soproludico.com/" />
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
 
   <meta property="og:type" content="website" />
@@ -19,8 +19,8 @@
   <meta property="og:title" content="Sopro Lúdico | My Dress-Up Dungeon" />
   <meta property="og:description"
     content="Conheça My Dress-Up Dungeon, o novo jogo em desenvolvimento pela Sopro Lúdico." />
-  <meta property="og:url" content="/" />
-  <meta property="og:image" content="assets/game-cover.png" />
+  <meta property="og:url" content="https://soproludico.com/" />
+  <meta property="og:image" content="https://soproludico.com/assets/game-cover.png" />
   <meta property="og:image:alt" content="Arte de My Dress-Up Dungeon" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:locale:alternate" content="en_US" />
@@ -29,7 +29,7 @@
   <meta name="twitter:title" content="Sopro Lúdico | My Dress-Up Dungeon" />
   <meta name="twitter:description"
     content="Conheça My Dress-Up Dungeon, o novo jogo em desenvolvimento pela Sopro Lúdico." />
-  <meta name="twitter:image" content="assets/game-cover.png" />
+  <meta name="twitter:image" content="https://soproludico.com/assets/game-cover.png" />
   <meta name="twitter:image:alt" content="Arte de My Dress-Up Dungeon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,28 +43,30 @@
         "@graph": [
           {
             "@type": "Organization",
-            "@id": "/#organization",
+            "@id": "https://soproludico.com/#organization",
             "name": "Sopro Lúdico",
-            "url": "/",
-            "logo": "assets/logo.svg",
+            "alternateName": ["Sopro Ludico", "soproludico.com"],
+            "url": "https://soproludico.com/",
+            "logo": "https://soproludico.com/assets/logo.svg",
             "description": "Estúdio independente de desenvolvimento de jogos."
           },
           {
             "@type": "VideoGame",
-            "@id": "/#my-dress-up-dungeon",
+            "@id": "https://soproludico.com/#my-dress-up-dungeon",
             "name": "My Dress-Up Dungeon",
             "description": "Jogo em desenvolvimento pela Sopro Lúdico.",
-            "image": "assets/game-cover.png",
+            "image": "https://soproludico.com/assets/game-cover.png",
             "inLanguage": ["pt-BR", "en"],
-            "author": { "@id": "/#organization" },
-            "publisher": { "@id": "/#organization" }
+            "author": { "@id": "https://soproludico.com/#organization" },
+            "publisher": { "@id": "https://soproludico.com/#organization" }
           },
           {
             "@type": "WebSite",
-            "@id": "/#website",
-            "url": "/",
+            "@id": "https://soproludico.com/#website",
+            "url": "https://soproludico.com/",
             "name": "Sopro Lúdico",
-            "publisher": { "@id": "/#organization" },
+            "alternateName": ["Sopro Ludico", "soproludico.com"],
+            "publisher": { "@id": "https://soproludico.com/#organization" },
             "inLanguage": ["pt-BR", "en"]
           }
         ]
@@ -197,6 +199,7 @@
 
     <footer>
       <span>© <span id="year"></span> Sopro Lúdico</span>
+      <span data-i18n="studioDescription">Estúdio independente brasileiro de desenvolvimento de jogos.</span>
     </footer>
   </main>
 
