@@ -1,14 +1,15 @@
 const translations = {
   pt: {
     pageTitle: "Sopro Lúdico | My Dress-Up Dungeon",
-    seoDescription: "Conheça My Dress-Up Dungeon, o novo jogo em desenvolvimento pela Sopro Lúdico. Acompanhe o projeto na Steam e no itch.io.",
+    seoDescription: "Conheça My Dress-Up Dungeon, o novo jogo em desenvolvimento pela Sopro Lúdico. Acompanhe o projeto na Steam (Em breve) e no itch.io.",
     socialDescription: "Conheça My Dress-Up Dungeon, o novo jogo em desenvolvimento pela Sopro Lúdico.",
     development: "Em desenvolvimento",
     gameDescription: "Acompanhe o desenvolvimento e adicione à sua lista de desejos.",
     languageSelector: "Selecionar idioma",
     studioLinks: "Links do estúdio",
     socialNetworks: "Redes sociais",
-    gameOnSteam: "Ver o jogo na Steam",
+    gameOnSteam: "Ver o jogo na Steam (Em breve)",
+    steamComingSoon: "Steam (Em breve)",
     gameOnItch: "Ver o jogo no itch.io",
     gameArtAlt: "Arte de My Dress-Up Dungeon",
     instagramLabel: "Instagram do Sopro Lúdico",
@@ -16,18 +17,19 @@ const translations = {
     blueskyLabel: "Bluesky do Sopro Lúdico",
     facebookLabel: "Facebook do Sopro Lúdico",
     itchLabel: "Página do Sopro Lúdico no itch.io",
-    steamLabel: "Página do Sopro Lúdico na Steam"
+    steamLabel: "Página do Sopro Lúdico na Steam (Em breve)"
   },
   en: {
     pageTitle: "Sopro Lúdico | My Dress-Up Dungeon",
-    seoDescription: "Discover My Dress-Up Dungeon, the new game in development by Sopro Lúdico. Follow the project on Steam and itch.io.",
+    seoDescription: "Discover My Dress-Up Dungeon, the new game in development by Sopro Lúdico. Follow the project on Steam (Soon) and itch.io.",
     socialDescription: "Discover My Dress-Up Dungeon, the new game in development by Sopro Lúdico.",
     development: "In development",
     gameDescription: "Follow the development and add our new game to your wishlist.",
     languageSelector: "Select language",
     studioLinks: "Studio links",
     socialNetworks: "Social media",
-    gameOnSteam: "View the game on Steam",
+    gameOnSteam: "View the game on Steam (Soon)",
+    steamComingSoon: "Steam (Soon)",
     gameOnItch: "View the game on itch.io",
     gameArtAlt: "My Dress-Up Dungeon artwork",
     instagramLabel: "Sopro Lúdico on Instagram",
@@ -35,7 +37,7 @@ const translations = {
     blueskyLabel: "Sopro Lúdico on Bluesky",
     facebookLabel: "Sopro Lúdico on Facebook",
     itchLabel: "Sopro Lúdico on itch.io",
-    steamLabel: "Sopro Lúdico on Steam"
+    steamLabel: "Sopro Lúdico on Steam (Soon)"
   }
 };
 

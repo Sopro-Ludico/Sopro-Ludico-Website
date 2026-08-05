@@ -151,7 +151,7 @@ footer {
 }
 
 .featured-game {
-  max-height: 460px;
+  max-height: 500px;
   min-height: 0;
   overflow: hidden;
   display: grid;
@@ -319,7 +319,7 @@ footer {
 @media (min-width: 761px) {
   .content {
     width: 100%;
-    height: min(100%, 460px);
+    height: min(100%, 500px);
     align-self: center;
   }
 }
