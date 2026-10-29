@@ -89,3 +89,18 @@ languageButtons.forEach((button) => {
 
 applyLanguage(initialLanguage);
 document.getElementById("year").textContent = new Date().getFullYear();
+
+const coverImage = document.querySelector("[data-covers]");
+if (coverImage) {
+  const covers = coverImage.dataset.covers.split(",").map((src) => src.trim()).filter(Boolean);
+  const intervalSeconds = Number(coverImage.dataset.coverInterval) || 8;
+  let currentCover = Math.max(covers.indexOf(coverImage.getAttribute("src")), 0);
+
+  if (covers.length > 1) {
+    covers.forEach((src) => { new Image().src = src; });
+    setInterval(() => {
+      currentCover = (currentCover + 1) % covers.length;
+      coverImage.src = covers[currentCover];
+    }, intervalSeconds * 1000);
+  }
+}
