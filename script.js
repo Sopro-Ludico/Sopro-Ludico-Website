@@ -94,13 +94,21 @@ const coverImage = document.querySelector("[data-covers]");
 if (coverImage) {
   const covers = coverImage.dataset.covers.split(",").map((src) => src.trim()).filter(Boolean);
   const intervalSeconds = Number(coverImage.dataset.coverInterval) || 8;
+  const coverBackground = coverImage.closest(".featured-game");
   let currentCover = Math.max(covers.indexOf(coverImage.getAttribute("src")), 0);
+
+  function showCover(src) {
+    coverImage.src = src;
+    if (coverBackground) coverBackground.style.setProperty("--cover-image", `url("${src}")`);
+  }
+
+  showCover(covers[currentCover]);
 
   if (covers.length > 1) {
     covers.forEach((src) => { new Image().src = src; });
     setInterval(() => {
       currentCover = (currentCover + 1) % covers.length;
-      coverImage.src = covers[currentCover];
+      showCover(covers[currentCover]);
     }, intervalSeconds * 1000);
   }
 }
